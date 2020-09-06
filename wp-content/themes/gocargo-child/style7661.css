@@ -1,0 +1,81 @@
+/*
+ Theme Name:   Gocargo Child
+ Theme URI:    http://demo.vegatheme.com/gocargo
+ Description:  Gocargo Child Theme
+ Author:       OceanThemes Team
+ Author URI:   http://oceanthemes.net
+ Template:     gocargo
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  gocargo-child
+*/
+
+@import url("../gocargo/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+#logo img.logo-1, #logo img.logo-2 {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+#mainmenu {
+
+    font-size: 13px;
+    
+    text-align: left !important;
+}
+
+/*.woocommerce-checkout .woocommerce .woocommerce-message {
+    display:none !important;
+}
+
+.woocommerce .blockUI.blockOverlay {
+position: relative!important;
+display: none!important;
+}*/
+
+.page .product_totals {
+	display: none;
+}
+
+body .gw-number-rows table.gfield_list {
+    counter-reset: gflistrowcounter;
+    margin-left: -24px;
+}
+.gw-number-rows .gfield_list thead tr:before {
+    content:'';
+}
+.gw-number-rows .gfield_list tbody tr:before {
+    content: counter(gflistrowcounter);
+    counter-increment: gflistrowcounter;
+}
+.gw-number-rows .gfield_list thead tr:before, .gw-number-rows .gfield_list tbody tr:before {
+    display: table-cell;
+    width: 18px;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.cta-form input[type=text] {
+    border-radius: 10px 0 0 10px;
+    background: #fff !important;
+    width: 75%;
+}
+
+#close-circle-1 {
+    color: #FFF !important;
+}
+
+#close-times-1 {
+    color: #000 !important;
+   padding-top: 11PX !important;
+}
+
+#wow-modal-window-1 {
+    width: 1010px;
+    height: auto;
+    margin-top: 140px !important;
+}
